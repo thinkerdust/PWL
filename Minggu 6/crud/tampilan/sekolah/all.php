@@ -6,7 +6,7 @@ if(get("q")!=""){
 $hasil = $koneksi->prepare("SELECT * FROM sekolah ".$addonq." ORDER BY id DESC"); 
 $hasil->execute(); $data = $hasil->fetchAll(); 
 ?> 
-<a class="btn pull-right" href="index.php?p=sekolah&m=add">Tambah Baru</a> 
+<a class="btn pull-right" href="index.php?p=home">Tambah Baru</a> 
 <h2>Data Sekolah</h2> 
 <div style="clear:both;width:200px;margin-right:12px;" class="pull-right"> 
     <form action="index.php?p=sekolah&m=search"> 
